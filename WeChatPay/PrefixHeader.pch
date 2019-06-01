@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  WeChatPay
+//
+//  Created by 大橙子 on 2019/6/1.
+//  Copyright © 2019 Tomous. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/*
+ *  打印
+ */
+#ifdef DEBUG
+#define DCLog(...) NSLog(__VA_ARGS__)
+#else
+#define DCLog(...)
+#endif
+
+
+#import "SVProgressHUD.h"
+
+
+/**  网络请求工具类 */
+#import "DCServiceTool.h"
+
+
+
+#endif /* PrefixHeader_pch */
